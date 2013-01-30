@@ -1,0 +1,33 @@
+{
+  "name": "socialfan",
+  "title": "Socialfan",
+  "description": "Animated, pop-out fan of links to personal social real-estate",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mchail/socialfan",
+  "author": {
+    "name": "Steve McHail",
+    "email": "mchail@gmail.com",
+    "url": "http://mchail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mchail/socialfan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mchail/socialfan/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mchail/socialfan/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/mchail/socialfan/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.6"
+  },
+  "keywords": []
+}
