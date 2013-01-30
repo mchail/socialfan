@@ -9,20 +9,22 @@
 (function($) {
 
   // Collection method.
-  $.fn.awesome = function() {
+  $.fn.socialfan = function(options) {
     return this.each(function() {
-      $(this).html('awesome');
+      socialfan($(this), uOptions);
     });
   };
 
-  // Static method.
-  $.awesome = function() {
-    return 'awesome';
-  };
-
-  // Custom selector.
-  $.expr[':'].awesome = function(elem) {
-    return elem.textContent.indexOf('awesome') >= 0;
-  };
+  function socialfan($el, uOptions) {
+    var options = $.extend(true,
+      {
+        size: 128,
+        rounded: true,
+        links: [],
+        email: ""
+      },
+      uOptions
+    );
+  }
 
 }(jQuery));
