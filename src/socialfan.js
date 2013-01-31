@@ -39,21 +39,27 @@
       $('<img>').attr('src', "http://gravatar.com/avatar/" + gravatarHex + "?s=" + options.size)
     );
     $container.append($imgContainer);
-    // for (var service in options.services) {
-    //   $container.append(
-    //     $('<a>').text(service).attr('href', serviceURLs[service] + options.services[service]).attr('target', '_blank')
-    //   );
-    // }
 
-    $service = $('<div>').addClass('socialfan-service');
-    $service.append($('<div>').addClass('socialfan-wedge'));
-    $container.append($service);
-    $service = $('<div>').addClass('socialfan-service').css('-webkit-transform', 'rotate(-30deg)');
-    $service.append($('<div>').addClass('socialfan-wedge'));
-    $container.append($service);
-    $service = $('<div>').addClass('socialfan-service').css('-webkit-transform', 'rotate(30deg)');
-    $service.append($('<div>').addClass('socialfan-wedge'));
-    $container.append($service);
+    var angle = (Object.keys(options.services).length - 1) / 2 * -30
+    for (var service in options.services) {
+      $service = $('<a>').attr('href', serviceURLs[service] + options.services[service]).attr('target', '_blank')
+        .addClass('socialfan-service')
+        .css('-webkit-transform', 'rotate(' + angle + 'deg)');
+      $service.append($('<div>').addClass('socialfan-wedge'));
+      $service.append($('<div>').addClass('socialfan-wedge-inner'));
+      $service.append($('<div>').addClass('socialfan-' + service).addClass('socialfan-icon'));
+      $container.append($service);
+      angle += 30;
+    }
+
+    // $service = $('<div>').addClass('socialfan-service');
+    // $service.append($('<div>').addClass('socialfan-wedge'));
+    // $service.append($('<div>').addClass('socialfan-wedge-inner'));
+    // $container.append($service);
+    // $service = $('<div>').addClass('socialfan-service').css('-webkit-transform', 'rotate(30deg)');
+    // $service.append($('<div>').addClass('socialfan-wedge'));
+    // $service.append($('<div>').addClass('socialfan-wedge-inner'));
+    // $container.append($service);
 
     $el.append($container);
 
