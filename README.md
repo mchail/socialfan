@@ -35,6 +35,14 @@ In your web page:
 ## Examples
 [demo](http://mchail.github.com/socialfan)
 
+Default state:
+
+![default state](https://raw.github.com/mchail/socialfan/gh-pages/images/mouseover.png "default state")
+
+Hover state:
+
+![hover state](https://raw.github.com/mchail/socialfan/gh-pages/images/mouseout.png "hover state")
+
 ## License
 Copyright (c) 2013 Steve McHail  
 Licensed under the MIT, GPL licenses.
