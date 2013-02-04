@@ -26,7 +26,7 @@ In your web page:
 				facebook: "smchail",
 				twitter: "smchail"
 			}
-			});
+		});
 	});
 </script>
 ```
