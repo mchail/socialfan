@@ -14,8 +14,9 @@ In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/socialfan.min.js"></script>
-<link rel="stylesheet" href="src/socialfan.css">
+<script src="socialfan.min.js"></script>
+<link rel="stylesheet" href="socialfan.css">
+<div class="socialfan"></div>
 <script>
 	$(document).ready(function() {
 		$('.socialfan').socialfan({
